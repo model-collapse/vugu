@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/vugu/vugu/vugufmt"
+	"github.com/model-collapse/vugu/vugufmt"
 )
 
 var (

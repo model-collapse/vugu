@@ -7,7 +7,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/vugu/vugu"
+	"github.com/model-collapse/vugu"
 )
 
 // we basically just wrap ParserGoPKg

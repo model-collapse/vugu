@@ -44,7 +44,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/vugu/vugu"
+	"github.com/model-collapse/vugu"
 )
 
 // SimpleHandler provides common web serving functionality useful for building Vugu sites.

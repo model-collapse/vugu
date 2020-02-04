@@ -69,7 +69,7 @@ func parserGoBuildAndRunMulti(pgmMap map[string]string, debug bool) (string, err
 	}
 	err = ioutil.WriteFile(filepath.Join(tmpDir, "go.mod"), []byte(`
 module main
-replace github.com/vugu/vugu => `+wd+`
+replace github.com/model-collapse/vugu => `+wd+`
 `), 0644)
 	if err != nil {
 		return "", err
@@ -142,7 +142,7 @@ func parserGoBuildAndRun(pgm string, debug bool) (string, error) {
 	}
 	err = ioutil.WriteFile(filepath.Join(tmpDir, "go.mod"), []byte(`
 module main
-replace github.com/vugu/vugu => `+wd+`
+replace github.com/model-collapse/vugu => `+wd+`
 `), 0644)
 	if err != nil {
 		return "", err

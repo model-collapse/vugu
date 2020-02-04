@@ -26,7 +26,7 @@ func TestSimpleHandlerDev(t *testing.T) {
 	// write a go.mod that points vugu module to use our local path instead of pulling from github
 	assert.NoError(ioutil.WriteFile(filepath.Join(tmpDir, "go.mod"), []byte(`
 module example.com/test
-replace github.com/vugu/vugu => `+vugudir+`
+replace github.com/model-collapse/vugu => `+vugudir+`
 	`), 0644))
 
 	assert.NoError(ioutil.WriteFile(filepath.Join(tmpDir, "root.vugu"), []byte(`
@@ -65,7 +65,7 @@ func TestSimpleHandlerProd(t *testing.T) {
 	// write a go.mod that points vugu module to use our local path instead of pulling from github
 	assert.NoError(ioutil.WriteFile(filepath.Join(tmpDir, "go.mod"), []byte(`
 module example.com/test
-replace github.com/vugu/vugu => `+vugudir+`
+replace github.com/model-collapse/vugu => `+vugudir+`
 	`), 0644))
 
 	assert.NoError(ioutil.WriteFile(filepath.Join(tmpDir, "root.vugu"), []byte(`

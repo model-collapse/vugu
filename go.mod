@@ -1,4 +1,4 @@
-module github.com/vugu/vugu
+module github.com/model-collapse/vugu
 
 require (
 	github.com/cespare/xxhash v1.1.0

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/vugu/vugu/internal/htmlx"
-	"github.com/vugu/vugu/internal/htmlx/atom"
+	"github.com/model-collapse/vugu/internal/htmlx"
+	"github.com/model-collapse/vugu/internal/htmlx/atom"
 )
 
 // Formatter allows you to format vugu files.

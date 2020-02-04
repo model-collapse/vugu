@@ -1,7 +1,7 @@
 package vugufmt
 
 import (
-	"github.com/vugu/vugu/internal/htmlx"
+	"github.com/model-collapse/vugu/internal/htmlx"
 )
 
 // tokenStack is a stack of nodes.
