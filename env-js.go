@@ -32,6 +32,10 @@ func init() {
 
 var jsEnv *JSEnv
 
+func GetJSEnv() *JSEnv {
+	return jsEnv
+}
+
 // JSEnv is an environment that renders to DOM in webassembly applications.
 type JSEnv struct {
 	MountParent string // query selector
@@ -78,6 +82,10 @@ func NewJSEnv(mountParent string, rootInst *ComponentInst, components ComponentT
 	}
 	jsEnv = ret
 	return ret
+}
+
+func (e *JSEnv) EventEnv() EventEnv {
+	return e.eventEnv
 }
 
 func (e *JSEnv) RegisterComponentType(tagName string, ct ComponentType) {

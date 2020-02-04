@@ -167,7 +167,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/vugu/vugu"
+	"github.com/model-collapse/vugu"
 )
 
 
